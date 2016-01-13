@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SYNGRATO</title>
+    <link>http://www.syngrato.com/</link>
+    <description>Recent content on SYNGRATO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <atom:link href="http://www.syngrato.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Us</title>
+      <link>http://www.syngrato.com/services/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.syngrato.com/services/about/about/</guid>
+      <description>&lt;p&gt;Danish legal technology startup that is currently developing the next generation contract negotiation and management platform, providing stakeholders with end-to-end insight into all commercial, financial and operational aspects of your mission critical and strategically important contracts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Legal Technology, Contract and Process Consulting</title>
+      <link>http://www.syngrato.com/services/consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.syngrato.com/services/consulting/</guid>
+      <description>&lt;p&gt;We provide technology and legal process consulting services to ambitious legal departments and lawfirms. We provide advisory services regarding:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Legal technology from envisioning to implementation. We leverage our deep understanding of how lawyers work and what factors influence the quality of legal service to ensure return on your investment and happy users.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Self-service solutions for legal departments. Greatly improve the scalability of your department for instance through implementation of a document assembly solution. We assist in the definition of the technology, processes, traning and incentive structures that ensures your self-service project succeeds. Recent technological development has made self-service solutions a very viable alternative to offshoring and it lets you retain and develop critical knowledge in-house.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Legal management information and business intelligence. Too many General Counsels are not armed with the right data when interacting with CxOs and other important stakeholders. We help you take your game to a new level by identifying the relevant data and asist you in the implemention of the solutions required to provide it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Contract processes focused on ensuring commercial success, executablity and compliance. We help implement the templates, systems, processes, checklists, negotiation guidance and governance structures thay put you and your organization in control of your contracts.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
