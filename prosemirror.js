@@ -15247,16 +15247,8 @@ window.pm = {
     exampleSetup: _exampleSetup.exampleSetup,
     buildMenuItems: _exampleSetup.buildMenuItems,
     tooltipMenu: _menu.tooltipMenu,
-    menuBar: _menu.menuBar
+    menuBar: _menu.menuBar,
+    StrongMark: _model.StrongMark
 };
-
-var place = document.querySelector("#editor");
-var content = document.querySelector("#content");
-
-var pm = window.pm = new _main.ProseMirror({
-    place: place,
-    doc: _schemaBasic.schema.parseDOM(content),
-    plugins: [_exampleSetup.exampleSetup.config({ menuBar: false, tooltipMenu: false })]
-});
 
 },{"prosemirror/dist/edit/main":11,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/model":36,"prosemirror/dist/schema-basic":44}]},{},[66]);
