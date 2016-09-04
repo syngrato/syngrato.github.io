@@ -15243,6 +15243,7 @@ var _model = require("prosemirror/dist/model");
 
 window.pm = {
     ProseMirror: _main.ProseMirror,
+    selection: _main.selection,
     schema: _schemaBasic.schema,
     exampleSetup: _exampleSetup.exampleSetup,
     buildMenuItems: _exampleSetup.buildMenuItems,
