@@ -15241,6 +15241,7 @@ var _require = require("prosemirror/dist/edit");
 
 var ProseMirror = _require.ProseMirror;
 var selection = _require.selection;
+var tr = _require.tr;
 
 var _require2 = require("prosemirror/dist/schema-basic");
 
