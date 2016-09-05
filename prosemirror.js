@@ -15284,6 +15284,7 @@ var mySchema = new Schema({
 window.pm = {
     ProseMirror: ProseMirror,
     selection: selection,
+    tr: tr,
     schema: schema,
     StrongMark: StrongMark,
     Schema: Schema,
