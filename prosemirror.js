@@ -15241,40 +15241,15 @@ var _menu = require("prosemirror/dist/menu");
 
 var _model = require("prosemirror/dist/model");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MyStrongMark = function (_StrongMark) {
-    _inherits(MyStrongMark, _StrongMark);
-
-    function MyStrongMark() {
-        _classCallCheck(this, MyStrongMark);
-
-        return _possibleConstructorReturn(this, (MyStrongMark.__proto__ || Object.getPrototypeOf(MyStrongMark)).apply(this, arguments));
-    }
-
-    return MyStrongMark;
-}(_model.StrongMark);
-
-var mySchema = new _model.Schema({
-    nodes: _schemaBasic.schema.nodeSpec,
-    marks: _schemaBasic.schema.markSpec.addBefore("link", "mystrongmark", MyStrongMark)
-});
 window.pm = {
     ProseMirror: _main.ProseMirror,
     selection: _main.selection,
     schema: _schemaBasic.schema,
-    Schema: _model.Schema,
     exampleSetup: _exampleSetup.exampleSetup,
     buildMenuItems: _exampleSetup.buildMenuItems,
     tooltipMenu: _menu.tooltipMenu,
     menuBar: _menu.menuBar,
-    StrongMark: _model.StrongMark,
-    MyStrongMark: MyStrongMark,
-    mySchema: mySchema
+    StrongMark: _model.StrongMark
 };
 
 },{"prosemirror/dist/edit/main":11,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/model":36,"prosemirror/dist/schema-basic":44}]},{},[66]);
