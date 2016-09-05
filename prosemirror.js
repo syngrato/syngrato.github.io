@@ -15239,17 +15239,15 @@ var _exampleSetup = require("prosemirror/dist/example-setup");
 
 var _menu = require("prosemirror/dist/menu");
 
-var _model = require("prosemirror/dist/model");
-
 window.pm = {
     ProseMirror: _main.ProseMirror,
     selection: _main.selection,
     schema: _schemaBasic.schema,
+    StrongMark: _schemaBasic.StrongMark,
     exampleSetup: _exampleSetup.exampleSetup,
     buildMenuItems: _exampleSetup.buildMenuItems,
     tooltipMenu: _menu.tooltipMenu,
-    menuBar: _menu.menuBar,
-    StrongMark: _model.StrongMark
+    menuBar: _menu.menuBar
 };
 
-},{"prosemirror/dist/edit/main":11,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/model":36,"prosemirror/dist/schema-basic":44}]},{},[66]);
+},{"prosemirror/dist/edit/main":11,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/schema-basic":44}]},{},[66]);
