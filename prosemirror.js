@@ -15231,23 +15231,32 @@ DOMSubscription.prototype.dispatch = function(event) {
 },{}],66:[function(require,module,exports){
 "use strict";
 
-var _main = require("prosemirror/dist/edit/main");
+var _require = require("prosemirror/dist/edit");
 
-var _schemaBasic = require("prosemirror/dist/schema-basic");
+var ProseMirror = _require.ProseMirror;
 
-var _exampleSetup = require("prosemirror/dist/example-setup");
+var _require2 = require("prosemirror/dist/schema-basic");
 
-var _menu = require("prosemirror/dist/menu");
+var schema = _require2.schema;
+
+var _require3 = require("prosemirror/dist/example-setup");
+
+var exampleSetup = _require3.exampleSetup;
+var buildMenuItems = _require3.buildMenuItems;
+
+var _require4 = require("prosemirror/dist/menu");
+
+var tooltipMenu = _require4.tooltipMenu;
+var menuBar = _require4.menuBar;
+
 
 window.pm = {
-    ProseMirror: _main.ProseMirror,
-    selection: _main.selection,
-    schema: _schemaBasic.schema,
-    StrongMark: _schemaBasic.StrongMark,
-    exampleSetup: _exampleSetup.exampleSetup,
-    buildMenuItems: _exampleSetup.buildMenuItems,
-    tooltipMenu: _menu.tooltipMenu,
-    menuBar: _menu.menuBar
+    ProseMirror: ProseMirror,
+    schema: schema,
+    exampleSetup: exampleSetup,
+    tooltipMenu: tooltipMenu,
+    buildMenuItems: buildMenuItems,
+    menuBar: menuBar
 };
 
-},{"prosemirror/dist/edit/main":11,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/schema-basic":44}]},{},[66]);
+},{"prosemirror/dist/edit":9,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/schema-basic":44}]},{},[66]);
