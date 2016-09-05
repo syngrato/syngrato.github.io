@@ -15282,7 +15282,8 @@ window.pm = {
     exampleSetup: exampleSetup,
     tooltipMenu: tooltipMenu,
     buildMenuItems: buildMenuItems,
-    menuBar: menuBar
+    menuBar: menuBar,
+    MyStrongMark: MyStrongMark
 };
 
 },{"prosemirror/dist/edit":9,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/model":36,"prosemirror/dist/schema-basic":44}]},{},[66]);
