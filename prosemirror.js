@@ -15231,6 +15231,12 @@ DOMSubscription.prototype.dispatch = function(event) {
 },{}],66:[function(require,module,exports){
 "use strict";
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var _require = require("prosemirror/dist/edit");
 
 var ProseMirror = _require.ProseMirror;
@@ -15255,6 +15261,17 @@ var _require5 = require("prosemirror/dist/menu");
 var tooltipMenu = _require5.tooltipMenu;
 var menuBar = _require5.menuBar;
 
+var MyStrongMark = function (_StrongMark) {
+    _inherits(MyStrongMark, _StrongMark);
+
+    function MyStrongMark() {
+        _classCallCheck(this, MyStrongMark);
+
+        return _possibleConstructorReturn(this, (MyStrongMark.__proto__ || Object.getPrototypeOf(MyStrongMark)).apply(this, arguments));
+    }
+
+    return MyStrongMark;
+}(StrongMark);
 
 window.pm = {
     ProseMirror: ProseMirror,
