@@ -15234,6 +15234,7 @@ DOMSubscription.prototype.dispatch = function(event) {
 var _require = require("prosemirror/dist/edit");
 
 var ProseMirror = _require.ProseMirror;
+var selection = _require.selection;
 
 var _require2 = require("prosemirror/dist/schema-basic");
 
@@ -15252,6 +15253,7 @@ var menuBar = _require4.menuBar;
 
 window.pm = {
     ProseMirror: ProseMirror,
+    selection: selection,
     schema: schema,
     exampleSetup: exampleSetup,
     tooltipMenu: tooltipMenu,
