@@ -15239,26 +15239,33 @@ var selection = _require.selection;
 var _require2 = require("prosemirror/dist/schema-basic");
 
 var schema = _require2.schema;
+var StrongMark = _require2.StrongMark;
 
-var _require3 = require("prosemirror/dist/example-setup");
+var _require3 = require("prosemirror/dist/model");
 
-var exampleSetup = _require3.exampleSetup;
-var buildMenuItems = _require3.buildMenuItems;
+var Schema = _require3.Schema;
 
-var _require4 = require("prosemirror/dist/menu");
+var _require4 = require("prosemirror/dist/example-setup");
 
-var tooltipMenu = _require4.tooltipMenu;
-var menuBar = _require4.menuBar;
+var exampleSetup = _require4.exampleSetup;
+var buildMenuItems = _require4.buildMenuItems;
+
+var _require5 = require("prosemirror/dist/menu");
+
+var tooltipMenu = _require5.tooltipMenu;
+var menuBar = _require5.menuBar;
 
 
 window.pm = {
     ProseMirror: ProseMirror,
     selection: selection,
     schema: schema,
+    StrongMark: StrongMark,
+    Schema: Schema,
     exampleSetup: exampleSetup,
     tooltipMenu: tooltipMenu,
     buildMenuItems: buildMenuItems,
     menuBar: menuBar
 };
 
-},{"prosemirror/dist/edit":9,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/schema-basic":44}]},{},[66]);
+},{"prosemirror/dist/edit":9,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/model":36,"prosemirror/dist/schema-basic":44}]},{},[66]);
