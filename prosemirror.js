@@ -15273,6 +15273,13 @@ var MyStrongMark = function (_StrongMark) {
     return MyStrongMark;
 }(StrongMark);
 
+;
+
+var mySchema = new Schema({
+    nodes: schema.nodeSpec,
+    marks: schema.markSpec.addBefore("link", "mystrongmark", MyStrongMark)
+});
+
 window.pm = {
     ProseMirror: ProseMirror,
     selection: selection,
@@ -15283,7 +15290,8 @@ window.pm = {
     tooltipMenu: tooltipMenu,
     buildMenuItems: buildMenuItems,
     menuBar: menuBar,
-    MyStrongMark: MyStrongMark
+    MyStrongMark: MyStrongMark,
+    mySchema: mySchema
 };
 
 },{"prosemirror/dist/edit":9,"prosemirror/dist/example-setup":18,"prosemirror/dist/menu":28,"prosemirror/dist/model":36,"prosemirror/dist/schema-basic":44}]},{},[66]);
