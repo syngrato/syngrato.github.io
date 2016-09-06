@@ -15231,6 +15231,8 @@ DOMSubscription.prototype.dispatch = function(event) {
 },{}],66:[function(require,module,exports){
 "use strict";
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -15251,6 +15253,8 @@ var StrongMark = _require2.StrongMark;
 var _require3 = require("prosemirror/dist/model");
 
 var Schema = _require3.Schema;
+var Attribute = _require3.Attribute;
+var MarkType = _require3.MarkType;
 
 var _require4 = require("prosemirror/dist/example-setup");
 
@@ -15262,23 +15266,48 @@ var _require5 = require("prosemirror/dist/menu");
 var tooltipMenu = _require5.tooltipMenu;
 var menuBar = _require5.menuBar;
 
-var MyStrongMark = function (_StrongMark) {
-    _inherits(MyStrongMark, _StrongMark);
+var FieldMark = function (_MarkType) {
+    _inherits(FieldMark, _MarkType);
 
-    function MyStrongMark() {
-        _classCallCheck(this, MyStrongMark);
+    function FieldMark() {
+        _classCallCheck(this, FieldMark);
 
-        return _possibleConstructorReturn(this, (MyStrongMark.__proto__ || Object.getPrototypeOf(MyStrongMark)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (FieldMark.__proto__ || Object.getPrototypeOf(FieldMark)).apply(this, arguments));
     }
 
-    return MyStrongMark;
-}(StrongMark);
+    _createClass(FieldMark, [{
+        key: "toDOM",
+        value: function toDOM() {
+            return ["field"];
+        }
+    }, {
+        key: "attrs",
+        get: function get() {
+            return {
+                "data-field": new Attribute({ default: "" })
+            };
+        }
+    }, {
+        key: "isField",
+        get: function get() {
+            return true;
+        }
+    }, {
+        key: "matchDOMTag",
+        get: function get() {
+            return { "data-field": null };
+        }
+    }]);
+
+    return FieldMark;
+}(MarkType);
 
 ;
+exports.FieldMark = FieldMark;
 
 var mySchema = new Schema({
     nodes: schema.nodeSpec,
-    marks: schema.markSpec.addBefore("link", "mystrongmark", MyStrongMark)
+    marks: schema.markSpec.addBefore("link", "field", FieldMark)
 });
 
 window.pm = {
@@ -15288,11 +15317,13 @@ window.pm = {
     schema: schema,
     StrongMark: StrongMark,
     Schema: Schema,
+    Attribute: Attribute,
+    MarkType: MarkType,
     exampleSetup: exampleSetup,
     tooltipMenu: tooltipMenu,
     buildMenuItems: buildMenuItems,
     menuBar: menuBar,
-    MyStrongMark: MyStrongMark,
+    FieldMark: FieldMark,
     mySchema: mySchema
 };
 
